@@ -1,8 +1,8 @@
-StringCalculatorTest.java:4: error: cannot find symbol
+StringCalculatorTest.java:5: error: cannot find symbol
 @RunWith(JUnitParamsRunner.class)
- ^
-  symbol: class RunWith
-StringCalculatorTest.java:16: error: cannot find symbol
+         ^
+  symbol: class JUnitParamsRunner
+StringCalculatorTest.java:17: error: cannot find symbol
     @Parameters(method="getInputAndExpected")
      ^
   symbol:   class Parameters
@@ -10,7 +10,7 @@ StringCalculatorTest.java:16: error: cannot find symbol
 StringCalculator.java:19: error: incompatible types: char cannot be converted to String
         String[] numbers = input.split(',');
                                        ^
-StringCalculatorTest.java:20: error: cannot find symbol
+StringCalculatorTest.java:21: error: cannot find symbol
         int result = sc.Add(input);
                        ^
   symbol:   method Add(String)
