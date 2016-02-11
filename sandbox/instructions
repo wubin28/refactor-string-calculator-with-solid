@@ -1,3 +1,11 @@
+Given this simple implementation of string calculator, mid way, how 
+would you refactor this, based on SOLID principles? and how far would 
+you go?
+
+Please note what principles you think this code breaks, and why it is 
+important that it implement them, if at all. show how you refactored 
+it in a gist.
+
 Kata: String Calculator
 
 Before you start
@@ -35,4 +43,3 @@ should still be supported, (existing tests should still pass).
 “negatives not allowed”. The exception message should include 
 the negative that was passed. If there are multiple negatives, 
 list all of them in the message.
-
