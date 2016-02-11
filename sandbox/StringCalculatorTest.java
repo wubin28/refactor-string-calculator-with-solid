@@ -1,6 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
+import junitparams.JUnitParamsRunner;
 
 @RunWith(JUnitParamsRunner.class)
 public class StringCalculatorTest {

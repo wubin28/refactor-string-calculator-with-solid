@@ -1,8 +1,11 @@
-StringCalculatorTest.java:5: error: cannot find symbol
+StringCalculatorTest.java:4: error: package junitparams does not exist
+import junitparams.JUnitParamsRunner;
+                  ^
+StringCalculatorTest.java:6: error: cannot find symbol
 @RunWith(JUnitParamsRunner.class)
          ^
   symbol: class JUnitParamsRunner
-StringCalculatorTest.java:17: error: cannot find symbol
+StringCalculatorTest.java:18: error: cannot find symbol
     @Parameters(method="getInputAndExpected")
      ^
   symbol:   class Parameters
@@ -10,10 +13,10 @@ StringCalculatorTest.java:17: error: cannot find symbol
 StringCalculator.java:19: error: incompatible types: char cannot be converted to String
         String[] numbers = input.split(',');
                                        ^
-StringCalculatorTest.java:21: error: cannot find symbol
+StringCalculatorTest.java:22: error: cannot find symbol
         int result = sc.Add(input);
                        ^
   symbol:   method Add(String)
   location: variable sc of type StringCalculator
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-4 errors
+5 errors
