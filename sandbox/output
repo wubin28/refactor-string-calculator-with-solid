@@ -1,6 +1,3 @@
-StringCalculator.java:19: error: incompatible types: char cannot be converted to String
-        String[] numbers = input.split(',');
-                                       ^
 StringCalculatorTest.java:15: error: cannot find symbol
         return Arrays.asList(new Object[][] {
                ^
@@ -11,5 +8,4 @@ StringCalculatorTest.java:31: error: cannot find symbol
                        ^
   symbol:   method Add(String)
   location: variable sc of type StringCalculator
-Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-3 errors
+2 errors

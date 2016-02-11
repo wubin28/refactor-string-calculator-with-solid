@@ -16,7 +16,7 @@ public class StringCalculator {
     }
 
     private int handleMultiple(String input) {
-        String[] numbers = input.split(',');
+        String[] numbers = input.split(",");
         return add(numbers[0]) + add(numbers[1]);
     }
 }
