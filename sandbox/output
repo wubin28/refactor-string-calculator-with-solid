@@ -1,11 +1,6 @@
-StringCalculatorTest.java:15: error: cannot find symbol
-        return Arrays.asList(new Object[][] {
-               ^
-  symbol:   variable Arrays
-  location: class StringCalculatorTest
-StringCalculatorTest.java:31: error: cannot find symbol
+StringCalculatorTest.java:32: error: cannot find symbol
         int result = sc.Add(input);
                        ^
   symbol:   method Add(String)
   location: variable sc of type StringCalculator
-2 errors
+1 error

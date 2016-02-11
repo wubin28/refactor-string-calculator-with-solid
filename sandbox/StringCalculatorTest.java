@@ -4,6 +4,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 import java.util.Collection;
+import java.util.Arrays;
 
 @RunWith(value=Parameterized.class)
 public class StringCalculatorTest {
