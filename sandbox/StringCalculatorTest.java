@@ -3,24 +3,31 @@ import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
 import junitparams.JUnitParamsRunner;
 
-@RunWith(JUnitParamsRunner.class)
+@RunWith(value=Parameterized.class)
 public class StringCalculatorTest {
+    private String input;
+    private int expected;
 
-    private static final Object[] getInputAndExpected() {
-        return new Object[] {
-            new Object[] {"", 0},
-            new Object[] {"1", 1},
-            new Object[] {"1,2", 3}
-        };
+    @Parameters
+    public static Collection<Object[]> getInputAndExpected() {
+        return Arrays.asList(new Object[][] {
+            {"", 0},   // input, expected
+            {"1", 1},  // input, expected
+            {"1,2", 3} // input, expected
+        });
+    }
+
+    public StringCalculatorTest(String input, int expected) {
+        this.input = input;
+        this.expected = expected;
     }
 
     @Test
-    @Parameters(method="getInputAndExpected")
-    public void add_empty_defaultResults(String input, int expected)
+    public void add_empty_defaultResults()
     {
         StringCalculator sc = new StringCalculator();
         int result = sc.Add(input);
     
-        assertEquals(result, expected);
+        assertEquals(expected, result);
     }
 }

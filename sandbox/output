@@ -1,22 +1,32 @@
 StringCalculatorTest.java:4: error: package junitparams does not exist
 import junitparams.JUnitParamsRunner;
                   ^
+StringCalculatorTest.java:12: error: cannot find symbol
+    public static Collection<Object[]> getInputAndExpected() {
+                  ^
+  symbol:   class Collection
+  location: class StringCalculatorTest
 StringCalculatorTest.java:6: error: cannot find symbol
-@RunWith(JUnitParamsRunner.class)
-         ^
-  symbol: class JUnitParamsRunner
-StringCalculatorTest.java:18: error: cannot find symbol
-    @Parameters(method="getInputAndExpected")
+@RunWith(value=Parameterized.class)
+               ^
+  symbol: class Parameterized
+StringCalculatorTest.java:11: error: cannot find symbol
+    @Parameters
      ^
   symbol:   class Parameters
   location: class StringCalculatorTest
 StringCalculator.java:19: error: incompatible types: char cannot be converted to String
         String[] numbers = input.split(',');
                                        ^
-StringCalculatorTest.java:22: error: cannot find symbol
+StringCalculatorTest.java:13: error: cannot find symbol
+        return Arrays.asList(new Object[][] {
+               ^
+  symbol:   variable Arrays
+  location: class StringCalculatorTest
+StringCalculatorTest.java:29: error: cannot find symbol
         int result = sc.Add(input);
                        ^
   symbol:   method Add(String)
   location: variable sc of type StringCalculator
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-5 errors
+7 errors
