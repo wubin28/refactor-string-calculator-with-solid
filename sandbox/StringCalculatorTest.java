@@ -2,6 +2,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 import java.util.Collection;
 
 @RunWith(value=Parameterized.class)

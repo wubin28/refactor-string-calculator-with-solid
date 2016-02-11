@@ -1,20 +1,15 @@
-StringCalculatorTest.java:12: error: cannot find symbol
-    @Parameters
-     ^
-  symbol:   class Parameters
-  location: class StringCalculatorTest
 StringCalculator.java:19: error: incompatible types: char cannot be converted to String
         String[] numbers = input.split(',');
                                        ^
-StringCalculatorTest.java:14: error: cannot find symbol
+StringCalculatorTest.java:15: error: cannot find symbol
         return Arrays.asList(new Object[][] {
                ^
   symbol:   variable Arrays
   location: class StringCalculatorTest
-StringCalculatorTest.java:30: error: cannot find symbol
+StringCalculatorTest.java:31: error: cannot find symbol
         int result = sc.Add(input);
                        ^
   symbol:   method Add(String)
   location: variable sc of type StringCalculator
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-4 errors
+3 errors
