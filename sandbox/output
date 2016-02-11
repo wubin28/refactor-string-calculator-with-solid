@@ -1,11 +1,19 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.E
-Time: 0.026
-There was 1 failure:
-1) life_the_universe_and_everything(HikerTest)
-java.lang.AssertionError: expected:<42> but was:<54>
-	at HikerTest.life_the_universe_and_everything(HikerTest.java:10)
-
-FAILURES!!!
-Tests run: 1,  Failures: 1
-
+StringCalculatorTest.java:4: error: cannot find symbol
+@RunWith(JUnitParamsRunner.class)
+ ^
+  symbol: class RunWith
+StringCalculatorTest.java:16: error: cannot find symbol
+    @Parameters(method="getInputAndExpected")
+     ^
+  symbol:   class Parameters
+  location: class StringCalculatorTest
+StringCalculator.java:19: error: incompatible types: char cannot be converted to String
+        String[] numbers = input.split(',');
+                                       ^
+StringCalculatorTest.java:20: error: cannot find symbol
+        int result = sc.Add(input);
+                       ^
+  symbol:   method Add(String)
+  location: variable sc of type StringCalculator
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
