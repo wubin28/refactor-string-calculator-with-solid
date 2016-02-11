@@ -29,7 +29,7 @@ public class StringCalculatorTest {
     public void add_empty_defaultResults()
     {
         StringCalculator sc = new StringCalculator();
-        int result = sc.Add(input);
+        int result = sc.add(input);
     
         assertEquals(expected, result);
     }
